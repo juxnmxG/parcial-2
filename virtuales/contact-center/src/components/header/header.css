@@ -1,0 +1,125 @@
+/* palette */
+:root {
+  --darker_bg: rgba(0, 0, 0, 0.15);
+  --header_bg: #0b0b3e;
+  --dark_med: #212529;
+  --light: #fff;
+}
+
+.header {
+  background-color: var(--header_bg);
+  display: flex;
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.logo-nav{
+  width: 100px;
+}
+.logo {
+  width: 100px; 
+}
+.wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+.nav {
+  color: var(--light);
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.nav2{
+  color: var(--light);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.bold {
+  font-weight: 700;
+}
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+.active {
+  visibility: visible;
+}
+.nav-item,
+.nav-link {
+  text-decoration: none;
+  color: var(--light);
+}
+.nav-item {
+  padding: 0.5rem 0 0.7rem;
+}
+
+.image-user{
+  border-radius: 100%;
+}
+.imgfaq{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) {
+  .header,
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .header {
+    justify-content: space-around;
+  }
+  .nav {
+    width: 60%;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 16px;
+  }
+  .dropdown-btn {
+    background-color: var(--header_bg);
+    width: 20px;
+    border: none;
+  }
+  .dropdown-item {
+    width: 150px;
+    text-decoration: none;
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    color: var(--dark_med);
+    background-color: var(--light);
+    border: solid 1px var(--darker_bg);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 55rem) {
+  .nav {
+    font-size: 18px;
+  }
+  .dropdown-item {
+    right: 50px;
+  }
+}

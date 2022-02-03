@@ -1,0 +1,176 @@
+:root {
+  --darker_bg: rgba(0, 0, 0, 0.15);
+  --dark_bg: rgba(0, 0, 0, 0.03);
+  --header_bg: #0b0b3e;
+  --dark_med: #212529;
+  --main_bg: #26235f;
+  --disabled: #78769a;
+  --blue_light: #46b2ce;
+  --light: #fff;
+
+  --speakers_bg: #12133f;
+  --social_color: #2b285f;
+  --social_bg: #bedf35;
+  --social_hover: #d1ee53;
+
+  --speakers_color: #ed441d;
+  --warning_bg: #ff0000;
+  --warning_color: #ff7b7b;
+}
+
+.button {
+  width: 14rem;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0.4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:not(.button:disabled):active {
+  border: 2px solid var(--disabled);
+  border-width: 2px 2px 0 2px;
+}
+.button:disabled {
+  color: var(--header_bg);
+  background-color: var(--disabled);
+  border: 2px solid var(--disabled);
+  cursor: not-allowed;
+}
+.button--primary {
+  color: var(--header_bg);
+  background-color: var(--social_bg);
+  border: 2px solid var(--social_bg);
+}
+.button--primary--regresar {
+  color: var(--header_bg);
+  background-color: var(--social_bg);
+  border: 2px solid var(--social_bg);
+  height: 100%;
+}
+.button--secondary {
+  color: var(--light);
+  background-color: var(--blue_light);
+  border: 2px solid var(--blue_light);
+}
+.button--secondary--dark {
+  color: var(--header_bg);
+  background-color: var(--blue_light);
+  border: 2px solid var(--blue_light);
+}
+.button--secondary--flat {
+  color: var(--light);
+  background-color: var(--blue_light);
+  border: 2px solid var(--blue_light);
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+.button--terciary,
+.speaker {
+  color: var(--light);
+  background-color: var(--header_bg);
+  border: 2px solid var(--header_bg);
+}
+.button--terciary--flat {
+  color: var(--light);
+  background-color: var(--header_bg);
+  border: 2px solid var(--header_bg);
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+.button--get-into {
+  width: 140%;
+  background-color: var(--social_bg);
+  position: absolute;
+  margin-top: 30%;
+  left: calc(-40%);
+  border-radius: 0.1rem;
+  font-size: 38px !important;
+  padding: 5px !important;
+  color: var(--social_color);
+  
+}
+.button--danger {
+  font-size: .8rem !important;
+  width: 80%;
+  height: 40px;
+  color: var(--light);
+  background-color: var(--warning_bg);
+  border: 2px solid var(--warning_bg);
+  border-radius: 25px;
+}
+.button--danger:hover {
+  color: var(--light);
+  background-color: rgba(255, 0, 0, 0.63);
+
+}
+.button--early {
+  font-size: .8rem !important;
+  width: 80%;
+  height: 40px;
+  color: var(--header_bg);
+  background-color: var(--social_bg);
+  border-radius: 25px;
+  border: 2px solid var(--social_bg);
+}
+.button--early:hover {
+  color: var(--header_bg);
+  background-color: #bddf3585;
+  border: 2px solid var(--social_bg);
+}
+.button--danger--mobile {
+  color: var(--light);
+  background-color: var(--speakers_color);
+  border: 2px solid var(--speakers_color);
+  width: 7rem;
+  border-radius: 3rem;
+}
+.button--primary:not(.button:disabled):active {
+  background-color: var(--social_hover);
+}
+.button--primary:not(.button:disabled):hover {
+  background-color: var(--social_hover);
+}
+.iconButton {
+  padding: 0 0.3rem;
+}
+.demoButton > button {
+  margin: 1rem 0;
+}
+.speaker {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0.2rem 0.2rem 0.2rem;
+}
+.button--movile{
+  width: 100%;
+  background-color: var(--header_bg);
+  color: #fff;
+}
+.button--controls-menu{
+  width: 10%;
+  font-size: 12px !important;
+  margin-left: 10px;
+  background-color: var(--social_bg);
+  color: var(--speakers_bg);
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .button--get-into{
+    margin-top: 25px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .button {
+    font-size: 17px;
+    padding: 1rem;
+  }
+}

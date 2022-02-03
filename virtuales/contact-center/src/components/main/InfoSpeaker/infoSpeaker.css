@@ -1,0 +1,30 @@
+.list-infoSpeaker ul{
+    margin-left: -45px;
+    list-style: none;
+    color: #fff;
+    display: flex;
+}
+.list-infoSpeaker ul li {
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: var(--header_bg);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-infoSpeaker ul li:nth-child(2) {
+    background-color: transparent;
+}
+.space-infoSpeaker{
+    margin-top: -16px;
+    background-color: var(--header_bg);
+    width: 93%;
+    height: 40vh;
+    border-radius: 5px;
+    padding: 20px;
+}
+.space-infoSpeaker h1{
+    margin-top: 15px;
+    color: #fff;
+}
